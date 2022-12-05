@@ -3,11 +3,24 @@ function time() {
     
     var hours = now.getHours()
     var amORpm;
+
+    if(hours < 7 || hours >= 21) {
+        document.body.style = 'background: #000000;filter: brightness(50%);';
+        
+    }
+
     if(hours < 12) {
         amORpm = '&nbsp;&nbsp;am'
     }
     else {
         amORpm = '&nbsp;&nbsp;pm'
+    }
+
+    if(hours > 12) {
+        hours -= 12;
+    }
+    else if(hours == 0) {
+        hours = 12;
     }
 
     var minutes = now.getMinutes();
@@ -21,7 +34,7 @@ function time() {
     }
     
 
-    var time =  (hours-12) + ':' + minutes + ':' + seconds;
+    var time =  hours + ':' + minutes + ':' + seconds;
     document.getElementById("time").innerHTML = time;
     document.getElementById("amORpm").innerHTML = amORpm;
 }
@@ -35,9 +48,9 @@ var ctx = canvas.getContext("2d");
 var refresh = function() {
     ctx.clearRect(0, 0, 1000, 1000);
 
-    for(let i = 0; i < 100; i++) {
-        var x = Math.floor(Math.random()*1900);
-        var y = Math.floor(Math.random()*900);
+    for(let i = 0; i < 25; i++) {
+        var x = Math.floor(Math.random()*2000);
+        var y = Math.floor(Math.random()*1000);
         var radius = Math.floor(Math.random()*20);
         
         ctx.beginPath();
