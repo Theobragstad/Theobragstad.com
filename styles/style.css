@@ -1,0 +1,26 @@
+.my-card {
+ padding-top:40vh;
+ padding-bottom:30vh;
+}
+
+.name {
+    background-color: #e8fcec;
+    color:#17d475;
+    font-family: "bubble";
+    font-size: 30px;
+    padding: 0.2rem;
+    border-radius: 15px;
+}
+
+@font-face {
+    font-family: bubble;
+    src: url("../fonts/bubble.otf") format("opentype");
+}
+
+#container {
+    position: relative;
+}
+
+#container canvas, #overlay {
+    position: absolute;
+}

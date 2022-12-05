@@ -1,26 +1,49 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/x-icon" href="https://www.favicon.cc/logo3d/123395.png?v=2"/>
+    <link rel="icon" href="img/t.png"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Theo Bragstad</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">  
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
-   <h1>Hello</h1>
-    <footer class="fixed-bottom bg-light">    
-      <div class="text-center">
-        <p>&nbsp&nbsp&nbsp&nbsp</p>
-          <a href="https://www.linkedin.com/in/theobragstad/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" style="width:20px"></a>
-        &nbsp&nbsp&nbsp&nbsp
-        <a href="https://github.com/Theobragstad"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="width:20px"></a>
-        <p>&nbsp&nbsp&nbsp&nbsp</p>
+    <div id="container">
+      <canvas id="canvas" width="1430" height="900" style="border:none"></canvas>
+    
+      <div style="padding-top:32vh;position: absolute;padding-left:42vw;">
+        <div class="name">
+          Theo <span style="font-size:20px">Bragstad</span>
+        </div>
       </div>
+        <div class="my-card center">
+          <div class="card  mx-auto img-rounded border-0 text-center" style="width:25%;background-color:#e8fcec;color:#17d475;">
+            <div class="card-body">
+              <h6 style="color:#aaaaaa;">
+                <span id="time"></span><span id="amORpm"></span>
+                <span style="padding-left:3vw;">Boulder, CO</span>
+              </h6> 
+
+              <div style="color:#656565">
+                <h6 style="padding-top:2vh;color:#17d475">Hi!</h6>
+                <h6 style="padding-top:2vh">I'm a student at the University of Colorado Boulder studying CS</a></h6>
+                <p style="padding-top:2vh;font-weight:450;font-size:1vw">I'm most interested in AI/ML, computer vision, autonomous vehicles, and the ways software can help solve problems in climate change, conservation, healthcare, and medicine</p>
+                <h6>
+                  <a href="mailto:theo.bragstad@colorado.edu" style="padding-right:1vw"><img src="img/gmail.png" style="width:1vw"></a>
+                  <a href="https://github.com/Theobragstad" style="padding-right:1vw"><img src="img/github.png" style="width:1vw"></a>
+                  <a href="https://linkedin.com/in/theobragstad"><img src="img/in.png" style="width:1vw"></a>
+                </h6>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <script src="js/script.js" async></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
   </body>
 </html>
