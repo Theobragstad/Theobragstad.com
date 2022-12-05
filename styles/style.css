@@ -1,6 +1,5 @@
 .my-card {
- padding-top:40vh;
- padding-bottom:30vh;
+ padding-top:200px;
 }
 
 .name {
@@ -10,6 +9,9 @@
     font-size: 30px;
     padding: 0.2rem;
     border-radius: 15px;
+    width:250px;
+    text-align: center;
+    position: relative;
 }
 
 @font-face {
