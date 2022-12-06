@@ -1,5 +1,5 @@
 function time() {
-    document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-US";, {timeZone: "America/Denver"});
+    document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-US", {timeZone: "America/Denver"});
     
     var hrs = new Date().getHours();
 
