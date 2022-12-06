@@ -1,7 +1,7 @@
 function time() {
-    document.getElementById("time").innerHTML = new Date().toLocaleTimeString('en-US';, {timeZone: 'America/Denver'});
+    document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-US";, {timeZone: "America/Denver"});
     
-    var hrs = new Date().getHours()
+    var hrs = new Date().getHours();
 
     if(hrs < 7 || hrs >= 21) {
         document.body.style = 'background: #000000;filter: brightness(50%);';
