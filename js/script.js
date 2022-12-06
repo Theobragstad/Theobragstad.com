@@ -1,42 +1,5 @@
 function time() {
-    var now = new Date();
-    
-    var hours = now.getHours()
-    var amORpm;
-
-    if(hours < 7 || hours >= 21) {
-        document.body.style = 'background: #000000;filter: brightness(50%);';
-        
-    }
-
-    if(hours < 12) {
-        amORpm = '&nbsp;&nbsp;am'
-    }
-    else {
-        amORpm = '&nbsp;&nbsp;pm'
-    }
-
-    if(hours > 12) {
-        hours -= 12;
-    }
-    else if(hours == 0) {
-        hours = 12;
-    }
-
-    var minutes = now.getMinutes();
-    if(minutes < 10) {
-        minutes = '0' + minutes;
-    }
-
-    var seconds = now.getSeconds();
-    if(seconds < 10) {
-        seconds = '0' + seconds;
-    }
-    
-
-    var time =  hours + ':' + minutes + ':' + seconds;
-    document.getElementById("time").innerHTML = time;
-    document.getElementById("amORpm").innerHTML = amORpm;
+    document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-NZ", {timeZone: "America/Denver"})
 }
 
 setInterval(time, 1000);
