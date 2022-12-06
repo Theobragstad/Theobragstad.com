@@ -14,6 +14,24 @@
     position: relative;
 }
 
+.name:hover {
+    font-size: 35px;
+}
+
+.hi:hover {
+    font-size:20px;
+}
+
+.interests {
+    font-size:12px;
+}
+
+.interests:hover {
+    font-size:15px;
+}
+
+
+
 @font-face {
     font-family: bubble;
     src: url("../fonts/bubble.otf") format("opentype");
@@ -25,4 +43,20 @@
 
 #container canvas, #overlay {
     position: absolute;
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%); 
 }
