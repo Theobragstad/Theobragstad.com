@@ -5,7 +5,6 @@ function time() {
 
     if(hrs < 7 || hrs >= 21) {
         document.body.style = 'background: #000000;filter: brightness(50%);';
-
     }
 }
 
