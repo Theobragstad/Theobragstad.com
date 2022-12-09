@@ -2,7 +2,7 @@ function time() {
     var hrs = new Date().getHours();
 
     if(hrs < 7 || hrs >= 21) {
-        document.body.style = 'background: #000000;filter: brightness(50%);';
+        document.body.style = 'background:#242526;filter: brightness(50%);';
     }
 
     document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-NZ", {timeZone: "America/Denver"});
