@@ -5,7 +5,7 @@ function time() {
         document.body.style = 'background:#242526;filter: brightness(50%);';
     }
 
-    document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-NZ", {timeZone: "America/Denver"});
+    // document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-NZ", {timeZone: "America/Denver"});
 }
 
 setInterval(time, 1000);

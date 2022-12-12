@@ -18,8 +18,6 @@
     font-size: 35px;
 }
 
-
-
 @font-face {
     font-family: bubble;
     src: url("../fonts/bubble.otf") format("opentype");
@@ -48,7 +46,6 @@ img:hover {
     -ms-filter: grayscale(0%);
     filter: grayscale(0%); 
 }
-
 
 * { 
     margin:0; 
