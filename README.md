@@ -1,2 +1,2 @@
 # Theobragstad.github.io
-Personal portfolio website
+Personal website
