@@ -19,10 +19,6 @@
     padding-top:200px;
 }
 
-a {
-    padding-right:20px
-}
-
 .name {
     background-color: #bdf6d9;
     color:#1e90ff;
@@ -43,9 +39,9 @@ a {
     color:#656565; 
 }
 
-
-
-
+a {
+    padding-right:20px
+}
 
 img {
     -webkit-filter: grayscale(100%);
@@ -68,9 +64,3 @@ img:hover {
 span:hover {
     font-size: 110%;
 }
-
-
-
-
-
-
