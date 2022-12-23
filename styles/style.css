@@ -1,5 +1,26 @@
-.my-card {
- padding-top:200px;
+@font-face {
+    font-family: bubble;
+    src: url("../fonts/bubble.otf") format("opentype");
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+    }
+}
+    
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+}
+
+.content {
+    padding-top:200px;
+}
+
+a {
+    padding-right:20px
 }
 
 .name {
@@ -9,27 +30,22 @@
     font-size: 30px;
     padding: 0.2rem;
     border-radius: 15px;
-    width:250px;
-    text-align: center;
-    position: relative;
+    margin: auto;
+    width: 250px;  
 }
 
-/* .name:hover {
-    font-size: 35px;
-} */
-
-@font-face {
-    font-family: bubble;
-    src: url("../fonts/bubble.otf") format("opentype");
+.myInfo {
+    width:50%;
+    margin: auto;
 }
 
-#container {
-    position: relative;
+.text {
+    color:#656565; 
 }
 
-#container canvas, #overlay {
-    position: absolute;
-}
+
+
+
 
 img {
     -webkit-filter: grayscale(100%);
@@ -37,6 +53,7 @@ img {
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     filter: grayscale(100%); 
+    width: 20px;
 }
 
 img:hover {
@@ -45,38 +62,15 @@ img:hover {
     -o-filter: grayscale(0%);
     -ms-filter: grayscale(0%);
     filter: grayscale(0%); 
+    width: 20px;
 }
 
-* { 
-    margin:0; 
-    padding:0; 
-} 
-
-html, body { 
-    width:100%; 
-    height:100%; 
-} 
-
-canvas { 
-    display:block; 
+span:hover {
+    font-size: 110%;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-      background-color: #121212;
-     
-    }
-  }
-
-@media (prefers-color-scheme: light) {
-    body {
-      background-color: white;
-    }
-  }
 
 
 
 
-  span:hover {
-    font-size:110%;
-  }
+
