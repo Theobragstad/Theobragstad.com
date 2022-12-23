@@ -3,8 +3,8 @@
 }
 
 .name {
-    background-color: #e8fcec;
-    color:#17d475;
+    background-color: #bdf6d9;
+    color:#1e90ff;
     font-family: "bubble";
     font-size: 30px;
     padding: 0.2rem;
@@ -14,9 +14,9 @@
     position: relative;
 }
 
-.name:hover {
+/* .name:hover {
     font-size: 35px;
-}
+} */
 
 @font-face {
     font-family: bubble;
@@ -72,4 +72,11 @@ canvas {
     body {
       background-color: white;
     }
+  }
+
+
+
+
+  span:hover {
+    font-size:110%;
   }
