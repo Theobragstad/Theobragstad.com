@@ -1,14 +1,14 @@
-function time() {
-    var hrs = new Date().getHours();
+// function time() {
+//     var hrs = new Date().getHours();
 
-    if(hrs < 7 || hrs >= 21) {
-        document.body.style = 'background:#242526;filter: brightness(50%);';
-    }
+//     if(hrs < 7 || hrs >= 21) {
+//         document.body.style = 'background:#242526;filter: brightness(50%);';
+//     }
 
-    // document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-NZ", {timeZone: "America/Denver"});
-}
+//     // document.getElementById("time").innerHTML = new Date().toLocaleTimeString("en-NZ", {timeZone: "America/Denver"});
+// }
 
-setInterval(time, 1000);
+// setInterval(time, 1000);
 
 
 
