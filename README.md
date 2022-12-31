@@ -1,5 +1,5 @@
 # Theobragstad.github.io
-[Personal website](theobragstad.com)
+[Personal website](www.theobragstad.com)
 
 **Features**:
 - Auto dark mode
