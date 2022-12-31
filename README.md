@@ -7,4 +7,4 @@
 - Custom font  
 
 Deployed with GitHub Pages  
-Domain hosted through Google Domains
+Custom domain hosted through Google Domains
