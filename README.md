@@ -7,4 +7,6 @@
 - Custom font  
 
 Deployed with GitHub Pages  
-Custom domain hosted through Google Domains
+Custom domain hosted through Google Domains  
+
+This project helped me learn about basic deployment, custom domains, and SSL for HTTPS secured websites. 
