@@ -1,4 +1,4 @@
-# Theobragstad.github.io
+# Theobragstad.com
 [Personal website](https://theobragstad.com)
 
 - Auto dark mode
