@@ -31,7 +31,7 @@
 }
 
 .myInfo {
-    width:60%;
+    width:20%;
     margin: auto;
 }
 
@@ -41,6 +41,7 @@
 
 a {
     padding-right:20px;
+    text-decoration: none;
 }
 
 img {
