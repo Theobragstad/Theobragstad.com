@@ -31,8 +31,18 @@
 }
 
 .myInfo {
-    width:20%;
+    width:280px;
     margin: auto;
+    text-align: center;
+}
+
+.zoom {
+     transition: transform .2s;
+}
+  
+.zoom:hover {
+    transform: scale(1.2); 
+    /* border-radius: 10px; */
 }
 
 .text {

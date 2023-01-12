@@ -12,7 +12,7 @@
   <body>      
     <div class="content">
       
-      <div class="name">
+      <div class="zoom name">
         <span>T</span><span>h</span><span>e</span><span>o</span> <span style="font-size:18px"><span>B</span><span>r</span><span>a</span><span>g</span><span>s</span><span>t</span><span>a</span><span>d</span></span>
       </div>
       
@@ -28,12 +28,28 @@
             Contact me and/or learn more below!
           </p>
 
-          <a title="Email" href="mailto:theo.bragstad@colorado.edu"><img src="img/email.png"></a>
-          <a title="LinkedIn" href="https://linkedin.com/in/theobragstad"><img src="img/in.png"></a>
-          <a title="GitHub" href="https://github.com/Theobragstad" onmouseover="setSrc(document.getElementById('githubIcon'), 'githubIconBlack.png')" onmouseout="setSrc(document.getElementById('githubIcon'), 'githubIconGray.png')">
-            <img id="githubIcon" src="img/githubIconGray.png">
-          </a>
-          <a href="/resume/resume.pdf"  class="resume">Resume</a>
+          <div>
+            <a title="Email" href="mailto:theo.bragstad@colorado.edu">
+              <button class="btn zoom">
+                <img src="img/email.png">
+              </button>
+            </a>
+            <a class="zoom" title="LinkedIn" href="https://linkedin.com/in/theobragstad">
+              <button class="btn zoom">
+                <img src="img/in.png">
+              </button>
+            </a>
+            <a class="zoom" title="GitHub" href="https://github.com/Theobragstad" onmouseover="setSrc(document.getElementById('githubIcon'), 'githubIconBlack.png')" onmouseout="setSrc(document.getElementById('githubIcon'), 'githubIconGray.png')">
+              <button class="btn zoom">
+                <img id="githubIcon" src="img/githubIconGray.png">
+              </button>
+            </a>
+            <a class="zoom" href="/resume/resume.pdf"  class="resume">
+              <button class="btn zoom">
+                <img src="img/resumeIcon.png">
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
