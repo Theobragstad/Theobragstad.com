@@ -75,3 +75,8 @@ img:hover {
 span:hover {
     font-size: 110%;
 }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
