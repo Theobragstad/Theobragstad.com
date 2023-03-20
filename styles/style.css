@@ -28,6 +28,11 @@
     border-radius: 15px;
     margin: auto;
     width: 225px;  
+    
+}
+
+.lastname {
+    color: #72d3fe;
 }
 
 .myInfo {
