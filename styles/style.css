@@ -50,6 +50,15 @@
     /* border-radius: 10px; */
 }
 
+.zoomBig {
+    transition: transform .3s;
+}
+
+.zoomBig:hover {
+    transform: scale(1.6); 
+    /* border-radius: 10px; */
+}
+
 .text {
     color:#656565; 
 }
