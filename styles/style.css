@@ -16,7 +16,10 @@
 }
 
 .content {
-    padding-top:200px;
+    /* position: absolute; */
+    padding-top: 15%;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .name {
