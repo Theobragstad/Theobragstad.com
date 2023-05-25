@@ -44,6 +44,18 @@
     color:gray;
 }
 
+.cu {
+    text-decoration: none;
+    font-weight: bold;
+    color:gray; 
+}
+
+.cu:hover {
+    background-color: #cfb87c;
+    color:#000000;
+    border-radius: 10px;
+}
+
 /* .lastname {
     color: #72d3fe;
 } */
@@ -86,7 +98,7 @@
 }
 
 a {
-    padding-right:20px;
+    padding-right:0px;
     text-decoration: none;
 }
 
@@ -112,12 +124,10 @@ span:hover {
     font-size: 110%;
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
-
-
 
 
 .pulsate1 {
@@ -347,8 +357,9 @@ body{
 
 
 
-.images {
+.links {
     visibility:hidden;
+    font-size: small;
 }
 
 .pulsate13 {
