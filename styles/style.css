@@ -69,6 +69,13 @@
     text-align: center;
 }
 
+
+@media (max-width: 768px) {
+    .myInfo {
+      width: 80%; /* Adjusted width for smaller screens */
+    }
+  }
+
 .zoom {
      transition: transform .2s;
 }
@@ -415,3 +422,6 @@ body {
         visibility:visible;
      }
 }
+
+
+
