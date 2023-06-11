@@ -17,7 +17,7 @@
 
 .name {
     background-color: #bdf6d9;
-    color:#1e90ff;
+    color: #1e90ff;
     font-family: "bubble";
     font-size: 30px;
     padding: 0.2rem;
@@ -28,25 +28,25 @@
 
 .link:hover {
     background-color: #bdf6d9;
-    color:#1e90ff;
+    color: #1e90ff;
     border-radius: 10px;
 }
 
 .link {
     text-decoration: none;
     font-weight: bold;
-    color:gray;
+    color: gray;
 }
 
 .cu {
     text-decoration: none;
     font-weight: bold;
-    color:gray; 
+    color: gray; 
 }
 
 .cu:hover {
     background-color: #cfb87c;
-    color:#000000;
+    color: #000000;
     border-radius: 10px;
 }
 
@@ -56,12 +56,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width:35vw
+    width: 35vw;
 }
-
-
-
-
 
 @media (max-width: 1000px) {
     .myInfo {
@@ -69,44 +65,20 @@
     }
   }
 
-  @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .myInfo {
         width: 55vw;
     }
-  }
-  /* @media (max-width: 1000px) {
-    .myInfo {
-        width: 50vw;
-    }
-  }
+}
 
-  @media (max-width: 800px) {
+@media (max-width: 600px) {
     .myInfo {
         width: 90vw;
     }
-  } */
-
-   @media (max-width: 600px) {
-    .myInfo {
-        width: 90vw;
-    }
-  }
-/* 
-  @media (max-width: 400px) {
-    .myInfo {
-        width: 90vw;
-    }
-  }
-
-
-  @media (max-width: 1200px) {
-    .myInfo {
-        width: 45vw;
-    }
-  } */
+}
 
 .zoom {
-     transition: transform .2s;
+    transition: transform .2s;
 }
   
 .zoom:hover {
@@ -137,11 +109,11 @@
 }
 
 .text {
-    color:#656565; 
+    color: #656565; 
 }
 
 a {
-    padding-right:0px;
+    padding-right: 0px;
     text-decoration: none;
 }
 
@@ -153,6 +125,18 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+.links {
+    visibility: hidden;
+    font-size: small;
+}
+
+.project {
+    margin-top: 80px;
+}
+
+
+
 
 .pulsate1 {
     -webkit-animation: pulsate1 300ms ease-out;
@@ -380,11 +364,6 @@ body {
     }
 }
 
-.links {
-    visibility:hidden;
-    font-size: small;
-}
-
 .pulsate13 {
     -webkit-animation: pulsate13 300ms ease-out;
     -webkit-animation-iteration-count: infinite; 
@@ -396,7 +375,6 @@ body {
         visibility:visible;
      }
 }
-
 
 .pulsate14 {
     -webkit-animation: pulsate14 300ms ease-out;
@@ -410,7 +388,6 @@ body {
      }
 }
 
-
 .pulsate15 {
     -webkit-animation: pulsate15 300ms ease-out;
     -webkit-animation-iteration-count: infinite; 
@@ -423,7 +400,6 @@ body {
      }
 }
 
-
 .pulsate16 {
     -webkit-animation: pulsate16 300ms ease-out;
     -webkit-animation-iteration-count: infinite; 
@@ -434,8 +410,4 @@ body {
     0% { 
         visibility:visible;
      }
-}
-
-.project {
-    margin-top: 80px;
 }
