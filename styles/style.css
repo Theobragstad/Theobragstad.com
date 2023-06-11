@@ -123,7 +123,7 @@
 
 .popout {
     transition: transform .3s;
-    margin-top: 200px;
+    margin-top: 50px;
     border-radius: 5px;
     max-width: 80vw;
     min-width: 30vw;
