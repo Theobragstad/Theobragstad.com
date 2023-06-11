@@ -60,12 +60,50 @@
 }
 
 
-@media (max-width: 600px) {
+
+
+
+@media (max-width: 1000px) {
+    .myInfo {
+        width: 60vw;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .myInfo {
+        width: 55vw;
+    }
+  }
+  /* @media (max-width: 1000px) {
+    .myInfo {
+        width: 50vw;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .myInfo {
+        width: 90vw;
+    }
+  } */
+
+   @media (max-width: 600px) {
+    .myInfo {
+        width: 90vw;
+    }
+  }
+/* 
+  @media (max-width: 400px) {
     .myInfo {
         width: 90vw;
     }
   }
 
+
+  @media (max-width: 1200px) {
+    .myInfo {
+        width: 45vw;
+    }
+  } */
 
 .zoom {
      transition: transform .2s;
@@ -85,7 +123,7 @@
 
 .popout {
     transition: transform .3s;
-    margin-top: 50px;
+    margin-top: 200px;
     border-radius: 5px;
     max-width: 80vw;
     min-width: 30vw;
