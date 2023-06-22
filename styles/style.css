@@ -27,6 +27,15 @@
   margin-bottom: 5vh;
 }
 
+.cs:hover {
+  font-family: "pixeled";
+}
+
+.name:hover {
+  color: #bdf6d9;
+  background-color: #1e90ff;
+}
+
 .link:hover {
   background-color: #bdf6d9;
   color: #1e90ff;
