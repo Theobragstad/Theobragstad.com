@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .box {
+    width:fit-content;
+    padding:5px 10px;
+    font-weight:bold;
+    border-radius: 10px;
+    transition: transform 0.25s;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  /* .boxes {
+    
+  } */
+
+  .box.blue {
+    background-color: #bdf6d9;
+    color: #1e90ff;
+    font-family: "bubble";
+    /* margin: 0 auto; */
+    
+  }
+
+
+  .CU:hover {
+    background-color: #cfb87c;
+    color: #000000;
+    border-radius: 10px;
+  }
+  .box.blue .firstname {
+    font-size: 40px;
+  }
+
+  .box.gray {
+    background-color: #f6f6f6;
+    color: #555555;
+    max-width:250px;
+    width:fit-content;
+    font-size: 13px;
+    /* margin: 5px 0px ; */
+  }
+
+  
+  .box.gray.button {
+    cursor:pointer;
+  }
+
+
+  
+
+
+  /* .box:hover {
+    transform: scale(1.25);
+  } */
+
+
+  @font-face {
+    font-family: bubble;
+    src: url("../fonts/bubble.otf") format("opentype");
+  }

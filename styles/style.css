@@ -27,14 +27,6 @@
   margin-bottom: 5vh;
 }
 
-.cs:hover {
-  font-family: "pixeled";
-}
-
-.name:hover {
-  color: #bdf6d9;
-  background-color: #1e90ff;
-}
 
 .link:hover {
   background-color: #bdf6d9;
@@ -66,7 +58,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 35vw;
+  width: 38vw;
+  font-weight: 500;
 }
 
 @media (max-width: 1000px) {
@@ -424,6 +417,18 @@ body {
 }
 
 @keyframes pulsate16 {
+  0% {
+    visibility: visible;
+  }
+}
+
+.pulsate17 {
+  animation: pulsate17 300ms ease-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1100ms;
+}
+
+@keyframes pulsate17 {
   0% {
     visibility: visible;
   }
