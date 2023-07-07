@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: bubble;
+  src: url("../fonts/bubble.otf") format("opentype");
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+}
+
+.name {
+  background-color: #bdf6d9;
+  color: #1e90ff;
+  font-family: "bubble";
+  font-size: 30px;
+  border-radius: 15px;
+  margin: auto;
+  width: 220px;
+  padding: 7px 3px;
+  margin-bottom: 5vh;
+}
+
+.firstname span:hover {
+  font-size: 40px;
+}
+
+.lastname span:hover {
+  font-size: 18px;
+}
+
+.firstname span,
+.lastname span {
+  transition: font-size 0.5s;
+  cursor: zoom-in;
+}
+
+a:not(.projects div a):hover {
+  background-color: #bdf6d9;
+  color: #1e90ff;
+  border-radius: 10px;
+}
+
+.projects div a:hover {
+  cursor: ne-resize;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+  padding: 2px 3px;
+}
+
+.cu {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 3px;
+  color: gray;
+}
+
+.cu:hover {
+  background-color: #cfb87c;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.myInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 38vw;
+  font-weight: 550;
+  cursor:grab;
+}
+
+@media (max-width: 1000px) {
+  .myInfo {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .myInfo {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .myInfo {
+    width: 90vw;
+  }
+
+  .name {
+    transform: scale(0.9);
+    margin-bottom: 0px;
+  }
+
+  .text {
+    transform: scale(1);
+    margin-top: 20px;
+  }
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.projects div a img {
+  width: 250px;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.projects div a img:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.projects div {
+  margin-top: 50px;
+}
+
+.projects h3 {
+  padding-top: 20px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.text {
+  color: #656565;
+}
+
+.links {
+  visibility: hidden;
+  font-size: small;
+}
+
+.lastname {
+  font-size: 13px;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 140%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+
+@keyframes show {
+  0% {
+    visibility: visible;
+  }
+}
+
+.pulsate1,
+.pulsate2,
+.pulsate3,
+.pulsate4,
+.pulsate5,
+.pulsate6,
+.pulsate7,
+.pulsate8,
+.pulsate9,
+.pulsate10,
+.pulsate11,
+.pulsate12 {
+  animation: pulse 500ms ease-out;
+}
+
+.pulsate1 {
+  animation-iteration-count: 1;
+}
+
+.pulsate2 {
+  animation-delay: 50ms;
+}
+
+.pulsate3 {
+  animation-delay: 100ms;
+}
+
+.pulsate4 {
+  animation-delay: 150ms;
+}
+
+.pulsate5 {
+  animation-delay: 200ms;
+}
+
+.pulsate6 {
+  animation-delay: 250ms;
+}
+
+.pulsate7 {
+  animation-delay: 300ms;
+}
+
+.pulsate8 {
+  animation-delay: 350ms;
+}
+
+.pulsate9 {
+  animation-delay: 400ms;
+}
+
+.pulsate10 {
+  animation-delay: 450ms;
+}
+
+.pulsate11 {
+  animation-delay: 500ms;
+}
+
+.pulsate12 {
+  animation-delay: 550ms;
+}
+
+.pulsate13,
+.pulsate14,
+.pulsate15,
+.pulsate16,
+.pulsate17 {
+  animation: show 500ms ease-out;
+  animation-iteration-count: infinite;
+}
+
+.pulsate13 {
+  animation-delay: 700ms;
+}
+
+.pulsate14 {
+  animation-delay: 800ms;
+}
+
+.pulsate15 {
+  animation-delay: 900ms;
+}
+
+.pulsate16 {
+  animation-delay: 1000ms;
+}
+
+.pulsate17 {
+  animation-delay: 1100ms;
+}
