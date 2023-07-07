@@ -80,6 +80,13 @@ a {
   border-radius: 10px;
 }
 
+.subheader {
+  font-weight: bold;
+  font-size:12px;
+  color:gray;
+ margin:10px 0px 20px 0px;
+}
+
 .myInfo {
   position: absolute;
   top: 50%;
@@ -138,7 +145,7 @@ a {
   z-index: 2;
 }
 
-.projects div {
+.projects div:not(.subheader) {
   margin-top: 50px;
 }
 
