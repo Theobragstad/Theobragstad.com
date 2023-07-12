@@ -50,6 +50,14 @@ body {
   cursor: zoom-in;
 }
 
+.largerText {
+  font-size: 15px;
+}
+
+.smallerText {
+  font-size: 13px;
+}
+
 a:not(.projects div a):hover {
   background-color: #bdf6d9;
   color: #1e90ff;
@@ -60,7 +68,8 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: gray;
-  padding: 2px 3px;
+  padding: 2px 1px 2px 3px;
+  margin-right: 10px;
 }
 
 .cu {
