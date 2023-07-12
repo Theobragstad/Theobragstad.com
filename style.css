@@ -56,10 +56,6 @@ a:not(.projects div a):hover {
   border-radius: 10px;
 }
 
-.projects div a:hover {
-  cursor: ne-resize;
-}
-
 a {
   text-decoration: none;
   font-weight: bold;
@@ -82,9 +78,9 @@ a {
 
 .subheader {
   font-weight: bold;
-  font-size:12px;
-  color:gray;
- margin:10px 0px 20px 0px;
+  font-size: 12px;
+  color: gray;
+  margin: 10px 0px 20px 0px;
 }
 
 .myInfo {
@@ -95,7 +91,7 @@ a {
   text-align: center;
   width: 38vw;
   font-weight: 550;
-  cursor:grab;
+  cursor: grab;
 }
 
 @media (max-width: 1000px) {
@@ -132,29 +128,6 @@ a {
 
 .zoom:hover {
   transform: scale(1.2);
-}
-
-.projects div a img {
-  width: 250px;
-  transition: transform 0.3s;
-  border-radius: 5px;
-}
-
-.projects div a img:hover {
-  transform: scale(1.05);
-  z-index: 2;
-}
-
-.projects div:not(.subheader) {
-  margin-top: 50px;
-}
-
-.projects h3 {
-  padding-top: 20px;
-}
-
-.projects {
-  text-align: center;
 }
 
 .text {
