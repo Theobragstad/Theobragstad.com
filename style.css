@@ -16,6 +16,11 @@ body {
   body {
     background-color: #121212;
   }
+  .myInfo {
+   
+    box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333 !important;
+
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -98,29 +103,30 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 38vw;
+  width: 26vw;
   font-weight: 550;
   cursor: grab;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding:20px 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding:20px 10px;
   border-radius: 20px;
+  /* background-color: white; */
 }
 
 @media (max-width: 1000px) {
   .myInfo {
-    width: 60vw;
+    width: 50vw;
   }
 }
 
 @media (max-width: 1200px) {
   .myInfo {
-    width: 55vw;
+    width: 40vw;
   }
 }
 
 @media (max-width: 600px) {
   .myInfo {
-    width: 90vw;
+    width: 80vw;
   }
 
   .name {
