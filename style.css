@@ -120,7 +120,7 @@ a {
 
 @media (max-width: 1200px) {
   .myInfo {
-    width: 40vw;
+    /* width: 40vw; */
   }
 }
 
