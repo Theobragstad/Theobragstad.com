@@ -101,6 +101,9 @@ a {
   width: 38vw;
   font-weight: 550;
   cursor: grab;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding:20px 10px;
+  border-radius: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -157,7 +160,7 @@ a {
     font-size: 100%;
   }
   50% {
-    font-size: 140%;
+    font-size: 125%;
   }
   100% {
     font-size: 100%;
