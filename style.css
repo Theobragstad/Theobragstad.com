@@ -17,9 +17,7 @@ body {
     background-color: #121212;
   }
   .myInfo {
-   
     box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333 !important;
-
   }
 }
 
@@ -107,9 +105,8 @@ a {
   font-weight: 550;
   cursor: grab;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    padding:20px 10px;
+  padding: 20px 10px;
   border-radius: 20px;
-  /* background-color: white; */
 }
 
 @media (max-width: 1000px) {
@@ -117,13 +114,6 @@ a {
     width: 50vw;
   }
 }
-
-@media (max-width: 1200px) {
-  .myInfo {
-    /* width: 40vw; */
-  }
-}
-
 @media (max-width: 600px) {
   .myInfo {
     width: 80vw;
