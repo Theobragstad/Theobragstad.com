@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: bubble;
-  src: url("../fonts/bubble.otf") format("opentype");
+  src: url("../bubble.otf") format("opentype");
 }
 
 @media (prefers-color-scheme: dark) {
