@@ -1,1 +1,1 @@
-# <img src="./img/t.png" width="50px"/> [Theobragstad.com](https://theobragstad.com)
+# <img src="t.png" width="50px"/> [Theobragstad.com](https://theobragstad.com)
