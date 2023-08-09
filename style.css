@@ -49,9 +49,12 @@ body {
   font-weight: bold;
   color: gray;
   padding: 3px;
-  margin-left: 10px;
   transition: background-color 0.75s, color 0.75s;
   border-radius: 10px;
+}
+
+.links a:not(:first-child) {
+  margin-left: 50px;
 }
 
 .links a:hover {
@@ -78,14 +81,10 @@ body {
 }
 @media (max-width: 600px) {
   .myInfo {
-    width: 80vw;
+    width: 85vw;
   }
 
-  .name {
-    transform: scale(0.9);
-    margin-bottom: 0px;
-  }
-
+  
   .text {
     transform: scale(1);
     margin-top: 20px;
@@ -108,7 +107,7 @@ body {
 .links {
   visibility: hidden;
   font-size: 13px;
-  margin: 30px auto 0px auto;
+  margin: 20px auto 0px auto;
 }
 
 .lastname {
