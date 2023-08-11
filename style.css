@@ -49,7 +49,6 @@ body {
   font-weight: bold;
   color: gray;
   padding: 3px;
-  transition: background-color 0.75s, color 0.75s;
   border-radius: 10px;
 }
 
