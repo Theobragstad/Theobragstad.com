@@ -53,7 +53,7 @@ body {
 }
 
 .links a:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .links a:hover {
@@ -195,7 +195,8 @@ body {
 
 .pulsate13,
 .pulsate14,
-.pulsate15 {
+.pulsate15,
+.pulsate16 {
   animation: show 500ms ease-out;
   animation-iteration-count: infinite;
 }
@@ -210,4 +211,8 @@ body {
 
 .pulsate15 {
   animation-delay: 900ms;
+}
+
+.pulsate16 {
+  animation-delay: 1s;
 }
