@@ -67,7 +67,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 26vw;
+  width: 36vw;
   font-weight: 550;
   padding: 20px 10px;
   border-radius: 20px;
@@ -75,7 +75,7 @@ body {
 
 @media (max-width: 1000px) {
   .myInfo {
-    width: 50vw;
+    width: 55vw;
   }
 }
 @media (max-width: 600px) {
