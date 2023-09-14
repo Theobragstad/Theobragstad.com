@@ -96,6 +96,31 @@ body {
   }
 }
 
+@media (max-width: 520px) {
+  .text {
+    transform: scale(0.8);
+    margin-top: -30px;
+
+  }
+  .myInfo {
+    width: 100vw;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .text {
+    transform: scale(0.75);
+    margin-top: -30px;
+
+  }
+  .myInfo {
+    width: 125vw;
+  }
+}
+
+
+
 .zoom {
   transition: transform 0.2s;
 }
