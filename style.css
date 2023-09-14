@@ -74,6 +74,8 @@ body {
   font-weight: 550;
   padding: 20px 10px;
   border-radius: 20px;
+  overflow: auto;
+  min-height: 500px;
 }
 
 @media (max-width: 1000px) {
