@@ -345,11 +345,9 @@ div[data-tooltip]:after {
 
 
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width : 700px){
 .myInfo {
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  
   min-height: 100vh;
   margin-top: 20vh;
  width:95vw;
