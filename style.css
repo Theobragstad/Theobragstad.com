@@ -50,6 +50,9 @@ body {
   color: gray;
   padding: 3px;
   border-radius: 10px;
+
+  opacity: 0; /* Initially set the opacity to 0 */
+  transition: opacity 0.5s; /* Add a transition effect for opacity */
 }
 
 .links a:not(:first-child) {
@@ -57,8 +60,8 @@ body {
 }
 
 .links a:hover {
-  background-color: #bdf6d9;
-  color: #1e90ff;
+  background-color: #ececec;
+  color: black;
 }
 
 .myInfo {
@@ -67,7 +70,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 36vw;
+  width: 40vw;
   font-weight: 550;
   padding: 20px 10px;
   border-radius: 20px;
@@ -103,7 +106,7 @@ body {
 }
 
 .links {
-  visibility: hidden;
+  /* visibility: hidden; */
   font-size: 13px;
   margin: 20px auto 0px auto;
 }
@@ -126,7 +129,10 @@ body {
 
 @keyframes show {
   0% {
-    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -197,8 +203,7 @@ body {
 .pulsate14,
 .pulsate15,
 .pulsate16 {
-  animation: show 500ms ease-out;
-  animation-iteration-count: infinite;
+  animation: show 500ms forwards;
 }
 
 .pulsate13 {
@@ -215,4 +220,33 @@ body {
 
 .pulsate16 {
   animation-delay: 1s;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 100%; /* put it on the top */
+  padding: 10px;
+  width: 140px;
+  font-size: 12px;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-radius: 20px;
+}
+
+[data-tooltip]:hover:after {
+  opacity: 1;
+}
+
+div[data-tooltip]:after {
+  left: 5px !important;
 }
