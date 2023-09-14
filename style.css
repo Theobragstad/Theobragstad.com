@@ -87,7 +87,7 @@ body {
   }
 
   .text {
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
     margin-top: 20px;
   }
 
@@ -95,31 +95,6 @@ body {
     transform: translateX(-80%) !important;
   }
 }
-
-@media (max-width: 520px) {
-  .text {
-    transform: scale(0.8);
-    margin-top: -30px;
-
-  }
-  .myInfo {
-    width: 100vw;
-  }
-}
-
-
-@media (max-width: 375px) {
-  .text {
-    transform: scale(0.75);
-    margin-top: -30px;
-
-  }
-  .myInfo {
-    width: 125vw;
-  }
-}
-
-
 
 .zoom {
   transition: transform 0.2s;
@@ -232,6 +207,7 @@ body {
 .pulsate15,
 .pulsate16 {
   animation: show 500ms forwards;
+  white-space: nowrap;
 }
 
 .pulsate13 {
@@ -260,6 +236,7 @@ body {
   transform: translateX(-50%);
   top: 100%;
   padding: 10px;
+
   width: 140px;
   font-size: 12px;
   opacity: 0;
@@ -270,6 +247,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   border-radius: 20px;
+  white-space: normal;
 }
 
 [data-tooltip]:hover:after {
@@ -348,4 +326,17 @@ div[data-tooltip]:after {
   font-weight: bold;
   padding: 3px;
   border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .links a {
+    margin-top: 10px;
+    margin-left: 0px !important;
+  }
 }
