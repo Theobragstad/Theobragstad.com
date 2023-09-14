@@ -51,8 +51,8 @@ body {
   padding: 3px;
   border-radius: 10px;
 
-  opacity: 0; /* Initially set the opacity to 0 */
-  transition: opacity 0.5s; /* Add a transition effect for opacity */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .links a:not(:first-child) {
@@ -70,7 +70,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 40vw;
+  width: 44vw;
   font-weight: 550;
   padding: 20px 10px;
   border-radius: 20px;
@@ -78,17 +78,21 @@ body {
 
 @media (max-width: 1000px) {
   .myInfo {
-    width: 55vw;
+    width: 80vw;
   }
 }
 @media (max-width: 600px) {
   .myInfo {
-    width: 85vw;
+    width: 93vw;
   }
 
   .text {
-    transform: scale(1);
+    transform: scale(0.9);
     margin-top: 20px;
+  }
+
+  [data-tooltip]:after {
+    transform: translateX(-80%) !important;
   }
 }
 
@@ -106,7 +110,6 @@ body {
 }
 
 .links {
-  /* visibility: hidden; */
   font-size: 13px;
   margin: 20px auto 0px auto;
 }
@@ -229,13 +232,14 @@ body {
 [data-tooltip]:after {
   content: attr(data-tooltip);
   position: absolute;
-  left: 50%;
-  bottom: 100%; /* put it on the top */
+  transform: translateX(-50%);
+  top: 100%;
   padding: 10px;
   width: 140px;
   font-size: 12px;
   opacity: 0;
   -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   background-color: white;
   color: black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -249,4 +253,74 @@ body {
 
 div[data-tooltip]:after {
   left: 5px !important;
+}
+
+.circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 13px;
+  border-radius: 10px;
+  vertical-align: middle;
+  animation: greenBg 0.5s ease 1400ms forwards;
+  width: 0px;
+}
+
+.plus {
+  font-size: 0px;
+  color: white;
+  position: relative;
+  bottom: 1px;
+  font-weight: bold;
+  animation: blueTxt 0.5s ease 1800ms forwards;
+}
+
+.circle:hover {
+  background-color: #1e90ff !important;
+  cursor: cell;
+}
+.circle:hover > .plus {
+  color: #bdf6d9 !important;
+}
+
+@keyframes greenBg {
+  0% {
+    width: 20px;
+    height: 13px;
+    margin-right: 0ch;
+  }
+  50% {
+    width: 40px;
+    height: 20px;
+    padding-right: 0px;
+  }
+  100% {
+    margin-right: 0.6ch;
+    width: 20px;
+    height: 13px;
+    background-color: #bdf6d9;
+  }
+}
+
+@keyframes blueTxt {
+  0% {
+    font-size: 11px;
+  }
+  50% {
+    font-size: 20px;
+  }
+
+  100% {
+    font-size: 11px;
+    color: #1e90ff;
+  }
+}
+
+.cu:hover {
+  color: black;
+  background-color: #cfb87c;
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 10px;
 }
