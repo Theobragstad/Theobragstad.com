@@ -93,9 +93,9 @@ body {
     margin-top: 20px;
   }
 
-  [data-tooltip]:after {
+  /* [data-tooltip]:after {
     transform: translateX(-80%) !important;
-  }
+  } */
 }
 
 .zoom {
