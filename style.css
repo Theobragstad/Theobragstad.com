@@ -337,13 +337,15 @@ div[data-tooltip]:after {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    text-align: center;
+    
+    align-items: center;
   }
 
   .links a {
     
     margin: 10px auto 0px auto;
     width:fit-content;
+    text-align: center;
   }
 }
 
