@@ -343,3 +343,53 @@ div[data-tooltip]:after {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Landscape Mode Styles */
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .myInfo {
+    width: 70vw; /* Adjust the width as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  .name {
+    font-size: 24px; /* Adjust the font size as needed */
+    width: 180px; /* Adjust the width as needed */
+  }
+
+  .text {
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-top: 10px;
+  }
+  
+  .links a {
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .circle {
+    width: 16px; /* Adjust the width as needed */
+    height: 11px; /* Adjust the height as needed */
+  }
+
+  .plus {
+    font-size: 8px; /* Adjust the font size as needed */
+  }
+}
