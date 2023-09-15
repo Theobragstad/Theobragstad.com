@@ -50,7 +50,7 @@ body {
   color: gray;
   padding: 3px;
   border-radius: 10px;
-
+  width:fit-content;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -338,16 +338,12 @@ div[data-tooltip]:after {
     flex-direction: column;
     margin-top: 10px;
     
-    align-items: center;
   }
 
   .links a {
     
-    /* margin: 10px auto 0px auto; */
-    margin-left: 0px;
-    margin-top: 10px;
-    width:fit-content;
-    text-align: center;
+   
+    
   }
 }
 
