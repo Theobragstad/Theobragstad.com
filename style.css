@@ -367,21 +367,22 @@ div[data-tooltip]:after {
   .myInfo {
     width: 70vw; /* Adjust the width as needed */
     font-size: 16px; /* Adjust the font size as needed */
-    top: 500px; /* Adjust the top position to give more space at the top */
+    top: 200px;
+    bottom:200px; /* Adjust the top position to give more space at the top */
   }
 
   .name {
-    font-size: 24px; /* Adjust the font size as needed */
-    width: 180px; /* Adjust the width as needed */
+    font-size: 32px; /* Adjust the font size as needed */
+    width: 250px; /* Adjust the width as needed */
   }
 
   .text {
-    font-size: 12px; /* Adjust the font size as needed */
+    font-size: 11px; /* Adjust the font size as needed */
     margin-top: 10px;
   }
   
   .links a {
-    font-size: 12px; /* Adjust the font size as needed */
+    font-size: 10px; /* Adjust the font size as needed */
     margin-left: 20px; /* Adjust the margin as needed */
   }
   
