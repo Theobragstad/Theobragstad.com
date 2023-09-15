@@ -367,6 +367,7 @@ div[data-tooltip]:after {
   .myInfo {
     width: 70vw; /* Adjust the width as needed */
     font-size: 16px; /* Adjust the font size as needed */
+    top: 5%; /* Adjust the top position to give more space at the top */
   }
 
   .name {
