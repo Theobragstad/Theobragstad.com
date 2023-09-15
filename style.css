@@ -61,8 +61,7 @@ body {
 
 .links a:hover {
   background-color: #ececec;
-  width:fit-content;
- transform: translateX(-50%,50%);
+  
   color: black;
 }
 
@@ -341,8 +340,10 @@ div[data-tooltip]:after {
   }
 
   .links a {
-    margin-top: 10px;
-    margin-left: 0px !important;
+    /* margin-top: 10px;
+    margin-left: 0px !important; */
+    margin: 10px auto;
+    width:fit-content;
   }
 }
 
