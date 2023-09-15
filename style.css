@@ -343,7 +343,7 @@ div[data-tooltip]:after {
 
   .links a {
     
-    margin: 10px auto 0px auto;
+    /* margin: 10px auto 0px auto; */
     width:fit-content;
     text-align: center;
   }
