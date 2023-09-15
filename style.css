@@ -62,6 +62,7 @@ body {
 .links a:hover {
   background-color: #ececec;
   width:fit-content;
+  margin: auto;
   color: black;
 }
 
