@@ -50,7 +50,7 @@ body {
   color: gray;
   padding: 3px;
   border-radius: 10px;
-  width:fit-content;
+  width: fit-content;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -61,7 +61,7 @@ body {
 
 .links a:hover {
   background-color: #ececec;
-  
+
   color: black;
 }
 
@@ -75,7 +75,6 @@ body {
   font-weight: 550;
   padding: 20px 10px;
   border-radius: 20px;
- 
 }
 
 @media (max-width: 1000px) {
@@ -89,13 +88,8 @@ body {
   }
 
   .text {
-    /* transform: scale(0.9); */
     margin-top: 20px;
   }
-
-  /* [data-tooltip]:after {
-    transform: translateX(-80%) !important;
-  } */
 }
 
 .zoom {
@@ -238,7 +232,6 @@ body {
   transform: translateX(-50%);
   top: 100%;
   padding: 10px;
-
   width: 140px;
   font-size: 12px;
   opacity: 0;
@@ -278,10 +271,7 @@ div[data-tooltip]:after {
   position: relative;
   font-weight: bold;
   animation: blueTxt 0.5s ease 1700ms forwards;
-
 }
-
-
 
 .circle:hover {
   background-color: #1e90ff !important;
@@ -342,61 +332,39 @@ div[data-tooltip]:after {
 
   .links a {
     margin-bottom: 10px;
-   margin-left: 0px !important;
-    
+    margin-left: 0px !important;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Landscape Mode Styles */
 @media screen and (max-width: 800px) and (orientation: landscape) {
   .myInfo {
-    width: 78vw; /* Adjust the width as needed */
-    font-size: 16px; /* Adjust the font size as needed */
+    width: 78vw;
+    font-size: 16px;
     top: 100px;
-    bottom:100px; /* Adjust the top position to give more space at the top */
+    bottom: 100px;
   }
 
   .name {
-    font-size: 32px; /* Adjust the font size as needed */
-    width: 250px; /* Adjust the width as needed */
+    font-size: 32px;
+    width: 250px;
   }
 
   .text {
-    font-size: 8px; /* Adjust the font size as needed */
+    font-size: 8px;
     margin-top: 10px;
   }
-  
+
   .links a {
-    font-size: 10px; /* Adjust the font size as needed */
-    margin-left: 20px; /* Adjust the margin as needed */
+    font-size: 10px;
+    margin-left: 20px;
   }
-  
+
   .circle {
-    width: 16px; /* Adjust the width as needed */
-    height: 11px; /* Adjust the height as needed */
+    width: 16px;
+    height: 11px;
   }
 
   .plus {
-    font-size: 8px; /* Adjust the font size as needed */
+    font-size: 8px;
   }
 }
