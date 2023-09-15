@@ -271,11 +271,10 @@ div[data-tooltip]:after {
   animation: greenBg 0.5s ease 1500ms forwards;
 }
 
-.plus {
+.arrow {
   font-size: 0px;
   color: white;
   position: relative;
-  bottom: 1px;
   font-weight: bold;
   animation: blueTxt 0.5s ease 1700ms forwards;
 
