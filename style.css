@@ -284,7 +284,7 @@ div[data-tooltip]:after {
 
 .circle:hover {
   background-color: #1e90ff !important;
-  cursor: cell;
+  cursor: e-resize;
 }
 .circle:hover > .plus {
   color: #bdf6d9 !important;
