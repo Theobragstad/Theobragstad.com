@@ -337,12 +337,12 @@ div[data-tooltip]:after {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    text-align: center;
   }
 
   .links a {
-    /* margin-top: 10px;
-    margin-left: 0px !important; */
-    margin: 10px auto;
+    
+    margin: 10px auto 0px auto;
     width:fit-content;
   }
 }
