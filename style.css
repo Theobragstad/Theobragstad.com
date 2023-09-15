@@ -343,14 +343,3 @@ div[data-tooltip]:after {
 }
 
 
-
-
-@media (orientation: landscape) {
-.myInfo {
-  
-  min-height: 100vh;
-  margin-top: 20vh;
- width:650px;
-}
-
-}
