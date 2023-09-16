@@ -265,7 +265,7 @@ div[data-tooltip]:after {
   animation: greenBg 0.5s ease 1500ms forwards;
 }
 
-.arrow {
+.smCircle {
   font-size: 0px;
   color: white;
   position: relative;
@@ -277,7 +277,7 @@ div[data-tooltip]:after {
   background-color: #1e90ff !important;
   cursor: e-resize;
 }
-.circle:hover > .arrow {
+.circle:hover > .smCircle {
   color: #bdf6d9 !important;
 }
 
@@ -302,14 +302,13 @@ div[data-tooltip]:after {
 
 @keyframes blueTxt {
   0% {
-    font-size: 11px;
+    font-size: 8px;
   }
   50% {
     font-size: 20px;
   }
-
   100% {
-    font-size: 11px;
+    font-size: 8px;
     color: #1e90ff;
   }
 }
