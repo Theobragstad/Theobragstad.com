@@ -261,7 +261,6 @@ div[data-tooltip]:after {
   height: 13px;
   border-radius: 10px;
   vertical-align: middle;
-  margin-right: 0.6ch;
   background-color: #bdf6d9;
 }
 
