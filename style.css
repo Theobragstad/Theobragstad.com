@@ -5,17 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsla(0, 0%, 7%, 1);
 }
 
 @font-face {
   font-family: bubble;
   src: url("../bubble.otf") format("opentype");
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-  }
 }
 
 .name {
