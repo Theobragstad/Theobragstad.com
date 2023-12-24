@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: left !important;
 }
 
 @font-face {
@@ -25,7 +26,8 @@ body {
   font-family: "bubble";
   font-size: 30px;
   border-radius: 15px;
-  margin: auto;
+  /* margin: auto; */
+  margin-left: 0px;
   width: 220px;
   padding: 7px 3px;
   margin-bottom: 3vh;
@@ -45,6 +47,9 @@ body {
   cursor: zoom-in;
 }
 
+.links {
+  text-align: left;
+}
 .links a {
   text-decoration: none;
   font-weight: bold;
@@ -58,7 +63,6 @@ body {
 
 .links a:hover {
   background-color: #ececec;
-
   color: black;
 }
 
@@ -100,6 +104,7 @@ body {
 .text {
   color: #656565;
   font-size: 13px;
+  text-align: left;
 }
 
 .links {
@@ -209,4 +214,8 @@ body {
 
 .pulse14 {
   animation-delay: 800ms;
+}
+
+.pulse15 {
+  animation-delay: 900ms;
 }
