@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left !important;
 }
 
 @font-face {
@@ -21,13 +20,11 @@ body {
 
 .name {
   background-color: #bdf6d9;
-  /* color: #11ce83; */
   color: #1e90ff;
   font-family: "bubble";
   font-size: 30px;
   border-radius: 15px;
-  /* margin: auto; */
-  margin-left: 0px;
+  margin: auto;
   width: 220px;
   padding: 7px 3px;
   margin-bottom: 3vh;
@@ -47,9 +44,6 @@ body {
   cursor: zoom-in;
 }
 
-.links {
-  text-align: left;
-}
 .links a {
   text-decoration: none;
   font-weight: bold;
@@ -61,7 +55,16 @@ body {
   transition: opacity 0.5s;
 }
 
-.links a:hover {
+.links img {
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.links span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.links img:hover {
   background-color: #ececec;
   color: black;
 }
@@ -104,7 +107,6 @@ body {
 .text {
   color: #656565;
   font-size: 13px;
-  text-align: left;
 }
 
 .links {
