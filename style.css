@@ -16,6 +16,10 @@ body {
   body {
     background-color: hsla(0, 0%, 7%, 1);
   }
+
+  .github-logo {
+    filter: invert(1);
+  }
 }
 
 .name {
@@ -57,7 +61,7 @@ body {
 
 .links img {
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .links span:not(:last-child) {
