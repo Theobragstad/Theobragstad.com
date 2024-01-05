@@ -23,8 +23,11 @@ body {
 }
 
 .name {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
   background-color: #bdf6d9;
   color: #1e90ff;
+
   font-family: "bubble";
   font-size: 30px;
   border-radius: 15px;
@@ -44,7 +47,7 @@ body {
 
 .firstname span,
 .lastname span {
-  transition: font-size 0.5s;
+  transition: font-size 1s;
   cursor: zoom-in;
 }
 
@@ -68,9 +71,14 @@ body {
   margin-right: 5px;
 }
 
-.links img:hover {
-  background-color: #ececec;
-  color: black;
+.links span {
+  position: relative;
+  bottom: 0;
+  transition: bottom 0.5s ease;
+}
+
+.links span:hover {
+  bottom: 5px;
 }
 
 .myInfo {
@@ -101,7 +109,7 @@ body {
 }
 
 .zoom {
-  transition: transform 0.2s;
+  transition: transform 1s;
 }
 
 .zoom:hover {
