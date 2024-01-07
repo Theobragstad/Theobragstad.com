@@ -23,6 +23,10 @@ body {
   }
 }
 
+img {
+  pointer-events: none;
+}
+
 .name {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   background-color: aliceblue;
@@ -70,6 +74,7 @@ body {
 .links img {
   padding: 3px;
   border-radius: 7px;
+  filter: grayscale(100%);
 }
 
 .links span:not(:last-child) {
@@ -84,6 +89,10 @@ body {
 
 .links span:hover {
   bottom: 5px;
+}
+
+.links span:hover img {
+  filter: grayscale(0%);
 }
 
 .myInfo {
@@ -222,7 +231,8 @@ body {
 .pulse13,
 .pulse14,
 .pulse15,
-.pulse16 {
+.pulse16,
+.pulse17 { 
   animation: show 500ms forwards;
   white-space: nowrap;
 }
@@ -241,6 +251,10 @@ body {
 
 .pulse16 {
   animation-delay: 1800ms;
+}
+
+.pulse17 {
+  animation-delay: 1900ms;
 }
 
 .intro {
