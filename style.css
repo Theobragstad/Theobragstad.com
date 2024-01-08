@@ -18,8 +18,8 @@ body {
     background-color: hsla(0, 0%, 7%, 1);
   }
 
-  .github-logo {
-    filter: invert(1);
+  .invert-dark {
+    filter: invert(1) !important;
   }
 }
 
