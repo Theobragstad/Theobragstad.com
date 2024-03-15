@@ -44,17 +44,15 @@ img {
 
 .firstname span:hover {
   font-size: 40px;
-  color:#3ded97;
 }
 
 .lastname span:hover {
   font-size: 18px;
-  color:#3ded97;
 }
 
 .firstname span,
 .lastname span {
-  transition: font-size 1s, color 1s;
+  transition: font-size 1s;
   cursor: zoom-in;
 }
 
