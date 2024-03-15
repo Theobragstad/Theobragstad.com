@@ -29,8 +29,10 @@ img {
 
 .name {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  background-color: #bdf6d9;
-  color: #1e90ff;
+  /* background-color: #bdf6d9;
+  color: #1e90ff; */
+  background-color: #3ded97;
+  color: #008080;
   font-family: "bubble";
   font-size: 30px;
   border-radius: 15px;
@@ -42,15 +44,17 @@ img {
 
 .firstname span:hover {
   font-size: 40px;
+  color:#3ded97;
 }
 
 .lastname span:hover {
   font-size: 18px;
+  color:#3ded97;
 }
 
 .firstname span,
 .lastname span {
-  transition: font-size 1s;
+  transition: font-size 1s, color 1s;
   cursor: zoom-in;
 }
 
