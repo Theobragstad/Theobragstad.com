@@ -53,7 +53,7 @@ img {
 .firstname span,
 .lastname span {
   transition: font-size 1s;
-  cursor: zoom-in;
+  cursor: none;
 }
 
 .intro {
