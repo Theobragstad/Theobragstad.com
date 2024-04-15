@@ -26,6 +26,29 @@
         </div>
         <div class="text">
           <div class="intro">CS @ University of Colorado Boulder</div>
+          <div class="clock">
+            <span id="time"></span>
+            <span id="indicator"></span>
+          </div>
+
+          <script>
+            function updateTime() {
+              var now = new Date();
+              var hours = now.getHours();
+              var minutes = now.getMinutes();
+              var seconds = now.getSeconds();
+              var am = hours < 12;
+              hours = hours > 12 ? hours - 12 : hours;
+              minutes = minutes < 10 ? "0" + minutes : minutes;
+              seconds = seconds < 10 ? "0" + seconds : seconds;
+              var timeString = hours + ":" + minutes + ":" + seconds;
+              document.getElementById("time").textContent = timeString;
+              document.getElementById("indicator").textContent = am
+                ? "  am"
+                : "  pm";
+            }
+            setInterval(updateTime, 1000);
+          </script>
 
           <div class="links">
             <span>
