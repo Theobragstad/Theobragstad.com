@@ -34,25 +34,43 @@
           <script>
             function updateTime() {
               var now = new Date();
-              var hours = now.getHours();
-              var minutes = now.getMinutes();
-              var seconds = now.getSeconds();
+              var localTime = now.getTime();
+              var localOffset = now.getTimezoneOffset() * 60000;
+              var utc = localTime + localOffset;
+              var offset = -6;
+              var mtnTime = new Date(utc + 3600000 * offset);
+
+              if (!isDST(mtnTime)) {
+                mtnTime = new Date(utc + 3600000 * -7);
+              }
+
+              var hours = mtnTime.getHours();
+              var minutes = mtnTime.getMinutes();
+              var seconds = mtnTime.getSeconds();
               var am = hours < 12;
-              hours = hours > 12 ? hours - 12 : hours;
+              hours = hours % 12;
+              hours = hours ? hours : 12;
               minutes = minutes < 10 ? "0" + minutes : minutes;
               seconds = seconds < 10 ? "0" + seconds : seconds;
               var timeString = hours + ":" + minutes + ":" + seconds;
               document.getElementById("time").textContent = timeString;
               document.getElementById("indicator").textContent = am
-                ? "  am"
-                : "  pm";
+                ? " am"
+                : " pm";
             }
+
+            function isDST(d) {
+              var jan = new Date(d.getFullYear(), 0, 1).getTimezoneOffset();
+              var jul = new Date(d.getFullYear(), 6, 1).getTimezoneOffset();
+              return d.getTimezoneOffset() < Math.max(jan, jul);
+            }
+
             setInterval(updateTime, 1000);
           </script>
 
           <div class="links">
             <span>
-              <a class="pulse13" href="mailto:theobragstad2@gmail.com">
+              <a class="pulse13" href="mailto:theobragstad2@gmail.com" target="_blank">
                 <img
                   src="img/email.png"
                   style="width: 16px"
@@ -62,7 +80,7 @@
               </a>
             </span>
             <span>
-              <a class="pulse14" href="https://linkedin.com/in/theobragstad">
+              <a class="pulse14" href="https://linkedin.com/in/theobragstad" target="_blank">
                 <img
                   src="img/linkedin.png"
                   style="width: 16px"
@@ -71,7 +89,7 @@
               </a>
             </span>
             <span>
-              <a class="pulse15" href="https://github.com/Theobragstad">
+              <a class="pulse15" href="https://github.com/Theobragstad" target="_blank">
                 <img
                   src="img/github.png"
                   style="width: 16px"
@@ -84,6 +102,7 @@
               <a
                 class="pulse16"
                 href="https://open.spotify.com/user/m0hzleszd6ba0f1raagvmfivr?si=7e031f73c8584c60"
+                target="_blank"
               >
                 <img src="img/spotify.png" style="width: 15px" alt="spotify" />
               </a>
@@ -93,6 +112,7 @@
                 class="pulse17"
                 href="https://comparify.app"
                 title="Analyze your Spotify"
+                target="_blank"
               >
                 <img src="img/comp.png" style="width: 20px" alt="comparify" />
               </a>
