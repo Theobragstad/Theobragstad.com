@@ -73,10 +73,6 @@ img {
   transition: font-size 1s;
 }
 
-.intro {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
 
 .links a {
   text-decoration: none;
@@ -120,7 +116,6 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 44vw;
-  font-weight: 550;
   padding: 20px 10px;
   border-radius: 20px;
 }
@@ -277,6 +272,12 @@ img {
 }
 
 .intro {
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 250px;
+  margin: 0 auto;
   animation: show 500ms forwards;
   animation-delay: 1000ms;
+  font-size:13px;
+  font-weight: 600;
 }
