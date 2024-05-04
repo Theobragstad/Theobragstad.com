@@ -23,6 +23,16 @@ body {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: hsla(0, 0%, 7%, 1);
+  }
+
+  .invert-dark {
+    filter: invert(1) !important;
+  }
+}
+
 img {
   pointer-events: none;
 }
