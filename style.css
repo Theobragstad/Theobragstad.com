@@ -255,8 +255,7 @@ img {
 .pulse13,
 .pulse14,
 .pulse15,
-.pulse16,
-.pulse17 { 
+.pulse16 { 
   animation: show 500ms forwards;
   white-space: nowrap;
 }
@@ -275,10 +274,6 @@ img {
 
 .pulse16 {
   animation-delay: 1800ms;
-}
-
-.pulse17 {
-  animation-delay: 1900ms;
 }
 
 .intro {
