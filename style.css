@@ -37,7 +37,6 @@ img {
   pointer-events: none;
 }
 
-
 .clock {
   margin-top: 15px;
   margin-bottom: -5px;
@@ -54,7 +53,7 @@ img {
 
 #indicator {
   position: absolute;
-  left: calc(50% + 20px); 
+  left: calc(50% + 20px);
 }
 
 .name {
@@ -82,7 +81,6 @@ img {
 .lastname span {
   transition: font-size 1s;
 }
-
 
 .links a {
   text-decoration: none;
@@ -151,7 +149,7 @@ img {
 
 .zoom:hover {
   transform: scale(1.2);
-  cursor:zoom-in;
+  cursor: zoom-in;
 }
 
 .text {
@@ -254,8 +252,7 @@ img {
 
 .pulse13,
 .pulse14,
-.pulse15,
-.pulse16 { 
+.pulse15 {
   animation: show 500ms forwards;
   white-space: nowrap;
 }
@@ -272,10 +269,6 @@ img {
   animation-delay: 1700ms;
 }
 
-.pulse16 {
-  animation-delay: 1800ms;
-}
-
 .intro {
   opacity: 0;
   transition: opacity 0.5s;
@@ -283,6 +276,6 @@ img {
   margin: 0 auto;
   animation: show 500ms forwards;
   animation-delay: 1000ms;
-  font-size:13px;
+  font-size: 13px;
   font-weight: 600;
 }
