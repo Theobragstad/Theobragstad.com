@@ -306,14 +306,15 @@ img {
 .button {
   margin: 5px;
   cursor: pointer;
-  border: 1px solid lightgray;
+  border: none;
   border-radius: 10px;
-  background-color: white;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color:rgb(125, 124, 124);
   transition: background-color 0.3s, border-color 0.3s;
 }
 .button:hover {
-  background-color: #f0f0f0;
-  border-color: gray;
+color:rgb(51, 51, 51);
 }
 
 #showChatButton:hover {
