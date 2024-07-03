@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const handleChatCompletion = async () => {
     try {
-      submitButton.textContent = "...";
+      submitButton.textContent = "loading...";
       submitButton.disabled = true;
+      submitButton.cursor = "default";
 
       const data = {
         userSession: sessionId,
