@@ -18,6 +18,16 @@ body {
     background-color: hsla(0, 0%, 7%, 1);
   }
 
+  .resizable-textarea {
+    background-color: black;
+    color: white;
+  }
+
+  .button {
+    background-color: black !important;
+    color: white;
+  }
+
   .invert-dark {
     filter: invert(1) !important;
   }
@@ -25,35 +35,16 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: hsla(0, 0%, 7%, 1);
+    /* background-color: hsla(0, 0%, 7%, 1); */
   }
 
-  .invert-dark {
+  /* .invert-dark {
     filter: invert(1) !important;
-  }
+  } */
 }
 
 img {
   pointer-events: none;
-}
-
-.clock {
-  margin-top: 15px;
-  margin-bottom: -5px;
-  color: #a6a6a6;
-  opacity: 0;
-  animation: show 2s forwards;
-  animation-delay: 2.5s;
-  font-weight: bold;
-}
-
-#time {
-  margin-right: 20px;
-}
-
-#indicator {
-  position: absolute;
-  left: calc(50% + 20px);
 }
 
 .name {
@@ -252,7 +243,9 @@ img {
 
 .pulse13,
 .pulse14,
-.pulse15 {
+.pulse15,
+.pulse16,
+.pulse17 {
   animation: show 500ms forwards;
   white-space: nowrap;
 }
@@ -269,6 +262,13 @@ img {
   animation-delay: 1700ms;
 }
 
+.pulse16 {
+  animation-delay: 1800ms;
+}
+
+.pulse17 {
+  animation-delay: 1900ms;
+}
 .intro {
   opacity: 0;
   transition: opacity 0.5s;
@@ -278,4 +278,48 @@ img {
   animation-delay: 1000ms;
   font-size: 13px;
   font-weight: 600;
+}
+
+.gpt_container {
+  margin-top: 50px;
+  display: none;
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+.resizable-textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.gpt_response {
+  margin: 30px auto 0px auto;
+  user-select: text !important;
+}
+
+.button {
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.button:hover {
+  background-color: #f0f0f0;
+  border-color: gray;
+}
+
+#showChatButton:hover {
+  cursor: pointer;
+}
+
+.clear-buttons {
+  margin-bottom: 20px;
 }

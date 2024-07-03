@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>​​​​​​​​​Theo Bragstad</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
   </head>
 
   <body>
@@ -73,8 +74,45 @@
                 />
               </a>
             </span>
+            <span>
+              <a class="pulse16" href="https://comparify.app" target="_blank">
+                <img
+                  src="img/comparify.png"
+                  style="width: 25px"
+                  alt="Analyze your music on Spotify"
+                />
+              </a>
+            </span>
+            <span id="showChatButton">
+              <a class="pulse17">
+                <img
+                  src="img/chatgpt.png"
+                  style="width: 16px"
+                  alt="ChatGPT"
+                  class="invert-dark"
+                />
+              </a>
+            </span>
           </div>
         </div>
+
+        <div class="container gpt_container" id="gptContainer">
+          <div>
+            <textarea id="prompt" class="resizable-textarea"></textarea>
+          </div>
+          <div class="gpt_button">
+            <button id="submitButton" class="button">submit</button>
+          </div>
+          <div id="response" class="gpt_response"></div>
+          <br />
+          <div class="clear-buttons">
+            <button id="clearHistoryButton" class="button">
+              clear history
+            </button>
+            <button id="clearChatButton" class="button">clear chat</button>
+          </div>
+        </div>
+        <script src="/script.js"></script>
       </div>
     </div>
     <footer></footer>
