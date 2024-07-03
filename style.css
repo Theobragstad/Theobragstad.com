@@ -31,6 +31,10 @@ body {
   .invert-dark {
     filter: invert(1) !important;
   }
+
+  .gpt_response {
+    color:white;
+  }
 }
 
 @media (prefers-color-scheme: light) {
