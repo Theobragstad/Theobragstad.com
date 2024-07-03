@@ -35,6 +35,12 @@ body {
   .gpt_response {
     color:white;
   }
+
+  .button:hover {
+    color:lightgray !important;
+    }
+
+
 }
 
 @media (prefers-color-scheme: light) {
