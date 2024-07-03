@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       const apiResponse = await fetch(
-        "https://theobragstad.fly.dev/api/chat-completions",
+        "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
         {
           method: "POST",
           headers: {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleClearHistory = async () => {
     try {
       const apiResponse = await fetch(
-        "https://theobragstad.fly.dev/api/clear-history",
+        "https://vigneshchandrasekhar.fly.dev/api/clear-history",
         {
           method: "POST",
           headers: {
