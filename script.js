@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       const apiResponse = await fetch(
-        "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
+        "https://theobragstad.fly.dev/api/chat-completions",
         {
           method: "POST",
           headers: {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleClearHistory = async () => {
     try {
       const apiResponse = await fetch(
-        "https://vigneshchandrasekhar.fly.dev/api/clear-history",
+        "https://theobragstad.fly.dev/api/clear-history",
         {
           method: "POST",
           headers: {
@@ -74,6 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
       gptContainer.style.display = "none";
     }
   };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault();
+      handleChatCompletion();
+    }
+  };
+
   showChatButton.addEventListener("click", handleToggleChat);
   submitButton.addEventListener("click", handleChatCompletion);
   clearHistoryButton.addEventListener("click", handleClearHistory);

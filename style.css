@@ -282,7 +282,7 @@ img {
 .intro {
   opacity: 0;
   transition: opacity 0.5s;
-  width: 250px;
+  width: 300px;
   margin: 0 auto;
   animation: show 500ms forwards;
   animation-delay: 1000ms;
