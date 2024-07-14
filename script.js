@@ -10,21 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
 
-  let PASSWORD = null;
-
-  const fetchPassword = async () => {
-    try {
-      const response = await fetch("https://theobragstad.fly.dev/api/get-password");
-      const data = await response.json();
-      PASSWORD = data.password;
-    } catch (error) {
-      console.error("Error fetching password:", error);
-    }
-  };
-
-  fetchPassword();
-
-
   const handleChatCompletion = async () => {
     try {
       submitButton.textContent = "loading...";
