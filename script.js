@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const showChatButton = document.getElementById("showChatButton");
   const gptContainer = document.getElementById("gptContainer");
 
-  
-
   const handleChatCompletion = async () => {
     try {
       submitButton.textContent = "loading...";
@@ -67,21 +65,29 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const handleToggleChat = async () => {
-    const enteredPassword = prompt("Please enter the password to access the chatbot:");
+    const enteredPassword = prompt(
+      "Please enter the password to access the chatbot:"
+    );
 
     try {
-      const response = await fetch("https://theobragstad.fly.dev/api/validate-password", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ password: enteredPassword }),
-      });
+      const response = await fetch(
+        "https://theobragstad.fly.dev/api/validate-password",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ password: enteredPassword }),
+        }
+      );
 
       const result = await response.json();
 
       if (result.success) {
-        if (gptContainer.style.display === "none" || gptContainer.style.display === "") {
+        if (
+          gptContainer.style.display === "none" ||
+          gptContainer.style.display === ""
+        ) {
           gptContainer.style.display = "block";
         } else {
           gptContainer.style.display = "none";
@@ -91,11 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (error) {
       console.error("Error validating password:", error);
-      alert("An error occurred while validating the password. Please try again.");
+      alert(
+        "An error occurred while validating the password. Please try again."
+      );
     }
   };
-
- 
 
   promptInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
@@ -108,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  
   showChatButton.addEventListener("click", handleToggleChat);
   submitButton.addEventListener("click", handleChatCompletion);
   clearHistoryButton.addEventListener("click", handleClearHistory);
