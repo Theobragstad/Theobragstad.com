@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const showChatButton = document.getElementById("showChatButton");
   const gptContainer = document.getElementById("gptContainer");
 
+  
+
   let PASSWORD = null;
 
   const fetchPassword = async () => {
