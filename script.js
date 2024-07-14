@@ -8,6 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const showChatButton = document.getElementById("showChatButton");
   const gptContainer = document.getElementById("gptContainer");
 
+  let PASSWORD = null;
+
+  const fetchPassword = async () => {
+    try {
+      const response = await fetch("https://theobragstad.fly.dev/api/get-password");
+      const data = await response.json();
+      PASSWORD = data.password;
+    } catch (error) {
+      console.error("Error fetching password:", error);
+    }
+  };
+
+  fetchPassword();
+
+
   const handleChatCompletion = async () => {
     try {
       submitButton.textContent = "loading...";
@@ -64,24 +79,49 @@ document.addEventListener("DOMContentLoaded", () => {
     responseDiv.innerHTML = "";
   };
 
-  const handleToggleChat = () => {
-    if (
-      gptContainer.style.display === "none" ||
-      gptContainer.style.display === ""
-    ) {
-      gptContainer.style.display = "block";
-    } else {
-      gptContainer.style.display = "none";
+  const handleToggleChat = async () => {
+    const enteredPassword = prompt("Please enter the password to access the chatbot:");
+
+    try {
+      const response = await fetch("https://theobragstad.fly.dev/api/validate-password", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ password: enteredPassword }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        if (gptContainer.style.display === "none" || gptContainer.style.display === "") {
+          gptContainer.style.display = "block";
+        } else {
+          gptContainer.style.display = "none";
+        }
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error validating password:", error);
+      alert("An error occurred while validating the password. Please try again.");
     }
   };
 
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter" && !event.shiftKey) {
-      event.preventDefault();
-      handleChatCompletion();
-    }
-  };
+ 
 
+  promptInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      if (event.shiftKey) {
+        promptInput.value += "\n";
+      } else {
+        event.preventDefault();
+        handleChatCompletion();
+      }
+    }
+  });
+
+  
   showChatButton.addEventListener("click", handleToggleChat);
   submitButton.addEventListener("click", handleChatCompletion);
   clearHistoryButton.addEventListener("click", handleClearHistory);
