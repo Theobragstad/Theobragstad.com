@@ -33,14 +33,12 @@ body {
   }
 
   .gpt_response {
-    color:white;
+    color: white;
   }
 
   .button:hover {
-    color:lightgray !important;
-    }
-
-
+    color: lightgray !important;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -306,7 +304,8 @@ img {
   border-color: lightgray;
   padding: 10px;
   border-radius: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-weight: 550;
   font-size: medium;
   line-height: 1;
@@ -316,7 +315,8 @@ img {
 .gpt_response {
   margin: 30px auto 0px auto;
   user-select: text !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: medium;
 }
@@ -328,11 +328,11 @@ img {
   border-radius: 10px;
   background-color: #f0f0f0;
   font-weight: bold;
-  color:rgb(125, 124, 124);
+  color: rgb(125, 124, 124);
   padding: 4px 10px;
 }
 .button:hover {
-color:rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
 }
 
 #showChatButton:hover {
@@ -343,10 +343,6 @@ color:rgb(51, 51, 51);
   margin-bottom: 20px;
 }
 
-
 button[disabled="true"] {
-cursor:none;
+  cursor: none;
 }
-
-
-
