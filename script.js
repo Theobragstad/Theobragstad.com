@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       const apiResponse = await fetch(
-        "https://theobragstad.fly.dev/api/chat-completions",
+        "https://theobragstad.fly.dev/",
         {
           method: "POST",
           headers: {
