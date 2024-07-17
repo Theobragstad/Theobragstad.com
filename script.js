@@ -121,6 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+
+
+  const handleShowSignature = async () => {
+    signature.style.display = "block";
+    nameDiv.style.display = "none";
+  };
+
+  nameDiv.addEventListener("click", handleShowSignature);
   showChatButton.addEventListener("click", handleToggleChat);
   submitButton.addEventListener("click", handleChatCompletion);
   clearHistoryButton.addEventListener("click", handleClearHistory);

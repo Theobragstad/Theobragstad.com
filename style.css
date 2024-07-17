@@ -295,6 +295,13 @@ img {
   overflow: scroll;
 }
 
+#signature {
+  display: none;
+  margin: 0 auto;
+  width:150px;
+  padding-bottom: 20px;
+}
+
 .resizable-textarea {
   width: 100%;
   max-width: 500px;
