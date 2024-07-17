@@ -128,6 +128,12 @@ document.addEventListener("DOMContentLoaded", () => {
     nameDiv.style.display = "none";
   };
 
+  const handleShowName = async () => {
+    signature.style.display = "none";
+    nameDiv.style.display = "block";
+  };
+
+  signature.addEventListener("click", handleShowName);
   nameDiv.addEventListener("click", handleShowSignature);
   showChatButton.addEventListener("click", handleToggleChat);
   submitButton.addEventListener("click", handleChatCompletion);
