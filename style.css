@@ -13,7 +13,7 @@ body {
   src: url("../bubble.otf") format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: hsla(0, 0%, 7%, 1);
   }
@@ -39,7 +39,7 @@ body {
   .button:hover {
     color: lightgray !important;
   }
-}
+} */
 
 @media (prefers-color-scheme: light) {
   body {
