@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  user-select: none;
+}
+
+@font-face {
+  font-family: bubble;
+  src: url("../bubble.otf") format("opentype");
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.name-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: bubble;
+  border-radius: 5px;
+}
+
+.letter-box.large {
+  background-color: #bdf6d9;
+  color: #1e90ff;
+  width: 50px;
+  height: 50px;
+}
+
+.letter-box.small {
+  background-color: #ffea61;
+  color: #ff5349;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  grid-template-rows: repeat(3, 30px);
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.grid-container .grid-item:hover > img {
+  display: block;
+}
+
+.grid-container .grid-item:hover {
+  background-color: white;
+}
+
+.grid-item {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.grid-item img {
+  display: none;
+  width: 24px;
+  height: auto;
+  border-radius: 4px;
+}
+
+#comparify img {
+  width: 24px;
+  height: auto;
+}
