@@ -31,7 +31,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 2px;
-  font-size: 65px;
   text-transform: uppercase;
   font-family: bubble;
   border-radius: 5px;
@@ -40,22 +39,24 @@ body {
 .letter-box.large {
   background-color: #bdf6d9;
   color: #1e90ff;
-  width: 70px;
-  height: 70px;
+  width: 3vw;
+  height: 3vw;
+  font-size:3vw;
 }
 
 .letter-box.small {
   background-color: #ffea61;
   color: #ff5349;
-  width: 30px;
-  height: 30px;
-  font-size: 25px;
+  width: 1vw;
+  height: 1vw;
+  font-size: 0.75vw;
 }
+
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 30px);
-  grid-template-rows: repeat(3, 30px);
+  grid-template-columns: repeat(3, 1vw);
+  grid-template-rows: repeat(3, 1vw);
   gap: 5px;
   margin-left: 20px;
 }
