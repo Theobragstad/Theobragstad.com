@@ -89,3 +89,49 @@ body {
   width: 24px;
   height: auto;
 }
+
+
+
+
+@media (max-width: 600px) {
+  .letter-box.large {
+    width: 10vw;
+    height: 10vw;
+    font-size: 7vw;
+  }
+
+  .letter-box.small {
+    width: 5vw;
+    height: 5vw;
+    font-size: 3vw;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 6vw);
+    grid-template-rows: repeat(3, 6vw);
+    gap: 3vw;
+  }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1248px) {
+  .letter-box.large {
+    width: 8vw;
+    height: 8vw;
+    font-size: 6vw;
+  }
+
+  .letter-box.small {
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 4vw);
+    grid-template-rows: repeat(3, 4vw);
+    gap: 2vw;
+  }
+}
+
