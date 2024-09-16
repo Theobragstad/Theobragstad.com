@@ -12,6 +12,13 @@ body {
   src: url("../bubble.otf") format("opentype");
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}
+
 .name-container {
   display: flex;
   flex-direction: column;
@@ -41,17 +48,16 @@ body {
   color: #2c9aff;
   width: 3vw;
   height: 3vw;
-  font-size:3vw;
+  font-size: 3vw;
 }
 
 .letter-box.small {
   background-color: #c4ddff;
-  color: #66ABF9;
+  color: #66abf9;
   width: 1vw;
   height: 1vw;
   font-size: 0.75vw;
 }
-
 
 .grid-container {
   display: grid;
@@ -90,9 +96,6 @@ body {
   height: auto;
 }
 
-
-
-
 @media (max-width: 600px) {
   .letter-box.large {
     width: 10vw;
@@ -113,8 +116,6 @@ body {
   }
 }
 
-
-
 @media (min-width: 601px) and (max-width: 1248px) {
   .letter-box.large {
     width: 8vw;
@@ -134,4 +135,3 @@ body {
     gap: 2vw;
   }
 }
-
