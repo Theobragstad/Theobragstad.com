@@ -37,16 +37,16 @@ body {
 }
 
 .letter-box.large {
-  background-color: #bdf6d9;
-  color: #1e90ff;
+  background-color: #c4ddff;
+  color: #2c9aff;
   width: 3vw;
   height: 3vw;
   font-size:3vw;
 }
 
 .letter-box.small {
-  background-color: #ffea61;
-  color: #ff5349;
+  background-color: #c4ddff;
+  color: #66ABF9;
   width: 1vw;
   height: 1vw;
   font-size: 0.75vw;
