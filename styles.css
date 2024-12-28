@@ -10,31 +10,33 @@ body {
 @font-face {
   font-family: bubble;
   src: url("../bubble.otf") format("opentype");
-}@media (prefers-color-scheme: dark) {
+}
+
+@media (prefers-color-scheme: dark) {
   body {
-    background-color: #121212 !important; /* Black background */
+    background-color: #121212 !important;
   }
 
   .letter-box.large {
-    background-color: #222222 !important; /* Very dark gray background for large letters */
-    color: #808080 !important; /* Dark gray text */
+    background-color: #222222 !important;
+    color: #808080 !important;
   }
 
   .letter-box.small {
-    background-color: #333333 !important; /* Darker gray background for small letters */
-    color: #666666 !important; /* Even darker gray text */
+    background-color: #333333 !important;
+    color: #666666 !important;
   }
 
   .grid-item {
-    background-color: #181818 !important; /* Extremely dark gray for grid items */
+    background-color: #181818 !important;
   }
 
   .grid-item:hover {
-    background-color: #222222 !important; /* Hover effect with a slightly lighter gray */
+    background-color: #222222 !important;
   }
   
   .grid-item img {
-    border-radius: 4px; /* Rounded image corners */
+    border-radius: 4px;
   }
 }
 
